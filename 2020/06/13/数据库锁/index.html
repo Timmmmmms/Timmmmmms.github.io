@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/6 | Timmmmmms</title>
+  <title>数据库锁 | Timmmmmms</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Baby steps to Giant strides &#x2F;n Mamba Out">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Timmmmmms">
-<meta property="og:url" content="http://yoursite.com/archives/2020/06/index.html">
+  <meta name="description" content="1 宏观1.1 数据库锁 数据库锁适用于集群 粒度小，更方便控制  1.2 代码锁 需要复杂的处理，才能作用于集群  粒度大   2 微观">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库锁">
+<meta property="og:url" content="http://yoursite.com/2020/06/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81/index.html">
 <meta property="og:site_name" content="Timmmmmms">
-<meta property="og:description" content="Baby steps to Giant strides &#x2F;n Mamba Out">
+<meta property="og:description" content="1 宏观1.1 数据库锁 数据库锁适用于集群 粒度小，更方便控制  1.2 代码锁 需要复杂的处理，才能作用于集群  粒度大   2 微观">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-13T05:15:22.733Z">
+<meta property="article:modified_time" content="2020-06-13T06:08:32.521Z">
 <meta property="article:author" content="Timmmmmms">
 <meta name="twitter:card" content="summary">
   
@@ -139,238 +141,252 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数据库锁" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/%E8%A7%A3%E5%86%B3Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B4%A9%E6%BA%83%20%E9%94%99%E8%AF%AF%E4%BB%A3%E7%A0%81%EF%BC%9ASTATUS_INVALID_IMAGE_HASH/" class="archive-article-date">
-  	<time datetime="2020-06-13T06:06:20.892Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/%E8%A7%A3%E5%86%B3Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B4%A9%E6%BA%83%20%E9%94%99%E8%AF%AF%E4%BB%A3%E7%A0%81%EF%BC%9ASTATUS_INVALID_IMAGE_HASH/">解决Google浏览器崩溃 错误代码：STATUS_INVALID_IMAGE_HASH</a>
+    <h1 class="article-title" itemprop="name">
+      数据库锁
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF/" class="archive-article-date">
-  	<time datetime="2020-06-13T05:15:22.739Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF/">自定义错误信息</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="archive-article-date">
-  	<time datetime="2020-06-13T05:15:22.738Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">线程安全的单例模式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/" class="archive-article-date">
-  	<time datetime="2020-06-13T05:15:22.735Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/">数据库隔离级别</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81/" class="archive-article-date">
+        
+        <a href="/2020/06/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81/" class="archive-article-date">
   	<time datetime="2020-06-13T05:15:22.733Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81/">数据库锁</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-宏观"><a href="#1-宏观" class="headerlink" title="1 宏观"></a>1 宏观</h2><h3 id="1-1-数据库锁"><a href="#1-1-数据库锁" class="headerlink" title="1.1 数据库锁"></a>1.1 数据库锁</h3><ul>
+<li>数据库锁适用于集群</li>
+<li>粒度小，更方便控制</li>
+</ul>
+<h3 id="1-2-代码锁"><a href="#1-2-代码锁" class="headerlink" title="1.2 代码锁"></a>1.2 代码锁</h3><ul>
+<li><p>需要复杂的处理，才能作用于集群</p>
+</li>
+<li><p>粒度大</p>
+</li>
+</ul>
+<h2 id="2-微观"><a href="#2-微观" class="headerlink" title="2 微观"></a>2 微观</h2><a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
-          
+<h3 id="2-1-行锁-amp-表锁"><a href="#2-1-行锁-amp-表锁" class="headerlink" title="2.1 行锁 &amp; 表锁"></a>2.1 行锁 &amp; 表锁</h3><h4 id="2-1-1-说明"><a href="#2-1-1-说明" class="headerlink" title="2.1.1 说明"></a>2.1.1 说明</h4><p><strong>只有「明确」指定主键，才会执行锁，否则将会执行表锁</strong></p>
+<h4 id="2-1-2-示例"><a href="#2-1-2-示例" class="headerlink" title="2.1.2 示例"></a>2.1.2 示例</h4><p>假设有个表 products ，字段id、name、type，id是主键。</p>
+<ul>
+<li><p>无锁</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 明确指定主键，但不存在该主键的值(没有数据，当然不会有锁)</span><br><span class="line">SELECT * FROM products WHERE id&#x3D;-1 FOR UPDATE;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>行锁</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 明确指定主键</span><br><span class="line">SELECT * FROM products WHERE id&#x3D;3 FOR UPDATE;</span><br><span class="line">SELECT * FROM products WHERE id&#x3D;3 AND type&#x3D;1 FOR UPDATE;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>表锁</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 主键不明确</span><br><span class="line">SELECT * FROM products WHERE name&#x3D;&#39;Mouse&#39; FOR UPDATE;</span><br><span class="line">SELECT * FROM products WHERE id&lt;&gt;&#39;3&#39; FOR UPDATE;</span><br><span class="line">SELECT * FROM products WHERE id LIKE &#39;3&#39; FOR UPDATE;</span><br></pre></td></tr></table></figure>
 
+</li>
+</ul>
+<h4 id="2-1-3-注意"><a href="#2-1-3-注意" class="headerlink" title="2.1.3 注意"></a>2.1.3 注意</h4><ul>
+<li>要测试锁定的状况，可以利用 MySQL 的 Command Mode ，开二个视窗来做测试。</li>
+<li>MyISAM 只支持表级锁，InnoDB支持行级锁添加了（行级锁、表级锁）锁的数据不能被其它事务再锁定，也不被其它事务修改（修改、删除） 。是表级锁时，不管是否查询到记录，都会锁定表。</li>
+</ul>
+<h3 id="2-2-行锁算法"><a href="#2-2-行锁算法" class="headerlink" title="2.2 行锁算法"></a>2.2 行锁算法</h3><h4 id="2-2-1-Record-Lock（普通行锁）"><a href="#2-2-1-Record-Lock（普通行锁）" class="headerlink" title="2.2.1 Record Lock（普通行锁）"></a>2.2.1 Record Lock（普通行锁）</h4><ul>
+<li>对于键值在条件范围内，且存在的记录，使用” Record Lock “，即普通的行锁机制；</li>
+</ul>
+<h4 id="2-2-2-Gap-Lock（间隙锁）"><a href="#2-2-2-Gap-Lock（间隙锁）" class="headerlink" title="2.2.2 Gap Lock（间隙锁）"></a>2.2.2 Gap Lock（间隙锁）</h4><ul>
+<li>对于键值在条件范围内但并不存在的记录，叫做” 间隙（GAP) “，InnoDB会对这个“间隙”加锁，这种锁机制就是所谓的” Gap Lock “(间隙锁)；</li>
+</ul>
+<h4 id="2-2-3-Next-Key-Lock（行-amp-间隙）"><a href="#2-2-3-Next-Key-Lock（行-amp-间隙）" class="headerlink" title="2.2.3 Next-Key Lock（行 &amp; 间隙）"></a>2.2.3 Next-Key Lock（行 &amp; 间隙）</h4><ul>
+<li><p>对于存在于不存在的数据同时加锁，则称为” Next-Key Lock “；</p>
+</li>
+<li><p><strong>Next-Key Lock包含Record Lock和Gap Lock；</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 假如user表中只有101条记录，empid的值是1,2,...,100,101</span></span><br><span class="line"><span class="comment"># 范围条件的检索，会对值为101的记录加锁，也会对大于101（不存在）加锁</span></span><br><span class="line"><span class="comment"># 由于两个锁同时存在，则此处为 Next-Key Lock</span></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span>  <span class="keyword">user</span> <span class="keyword">where</span> user_id &gt; <span class="number">100</span> <span class="keyword">for</span> <span class="keyword">update</span>;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="2-3-表锁算法"><a href="#2-3-表锁算法" class="headerlink" title="2.3 表锁算法"></a>2.3 表锁算法</h3><h4 id="2-3-1-意向锁"><a href="#2-3-1-意向锁" class="headerlink" title="2.3.1 意向锁"></a>2.3.1 意向锁</h4><ul>
+<li><p>当一个事务带着表锁去访问一个被加了行锁的资源，那么，此时，这个行锁就会升级为意向锁，将表锁住。</p>
+</li>
+<li><p>常用的意向锁有：意向共享锁，意向排它锁，共享意向排它锁</p>
+</li>
+</ul>
+<h4 id="2-3-2-自增锁"><a href="#2-3-2-自增锁" class="headerlink" title="2.3.2 自增锁"></a>2.3.2 自增锁</h4><ul>
+<li><p>事务插入自增类型的列时获取自增锁</p>
+<blockquote>
+<p>如果一个事务正在往表中插入自增记录，所有其他事务的插入必须等待</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="3-实现"><a href="#3-实现" class="headerlink" title="3 实现"></a>3 实现</h2><h3 id="3-1-共享锁-amp-排它锁"><a href="#3-1-共享锁-amp-排它锁" class="headerlink" title="3.1 共享锁 &amp; 排它锁"></a>3.1 共享锁 &amp; 排它锁</h3><blockquote>
+<p>行锁和表锁是锁粒度的概念，共享锁和排它锁是他们的具体实现</p>
+</blockquote>
+<h4 id="3-1-1-共享锁（S）：读锁"><a href="#3-1-1-共享锁（S）：读锁" class="headerlink" title="3.1.1 共享锁（S）：读锁"></a>3.1.1 共享锁（S）：读锁</h4><ul>
+<li>允许一个事务去读一行，阻止其他事务获取该行的排它锁。</li>
+<li>多事务时，只能加共享读锁，不能加排他写锁；单事务时，可以加任何锁。</li>
+<li>一般理解为：能读，不能写。</li>
+</ul>
+<h4 id="3-1-2-排它锁（X）：写锁"><a href="#3-1-2-排它锁（X）：写锁" class="headerlink" title="3.1.2 排它锁（X）：写锁"></a>3.1.2 排它锁（X）：写锁</h4><ul>
+<li>允许持有排它锁的事务读写数据，阻止其他事物获取该数据的共享锁和排它锁。</li>
+<li>其他事务不能获取该数据的任何锁，直到排它锁持有者释放。</li>
+<li>不能获取任何锁，不代表不能无锁读取。</li>
+</ul>
+<p><strong><font color="red">注意</font></strong></p>
+<ul>
+<li><p>排它锁指的是，在某个事务获取数据的排它锁后，其他事务不能获取该数据的任何锁，<br><strong>并不代表其他事务不能无锁读取该数据。</strong></p>
+<ul>
+<li><font color="red">无锁</font><ul>
+<li><strong>select … from</strong></li>
+</ul>
+</li>
+<li><font color="red">共享锁</font><ul>
+<li><strong>select … lock in share mode</strong></li>
+</ul>
+</li>
+<li><font color="red">排它锁</font><ul>
+<li><strong>update</strong></li>
+<li><strong>delete</strong></li>
+<li><strong>insert</strong></li>
+<li><strong>select … for update</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>MySQL8.0 中，使用 FOR SHARE 替代了 LOCK IN SHARE MODE，但仍然支持 LOCK IN SHARE MODE；<br>虽然是等价的，但是 FOR SHARE 支持 NOWAIT 、 SKIP LOCKED 等，配合自旋，可以实现高效的等待队列。</p>
+</li>
+</ul>
+<h3 id="3-2-乐观锁-amp-悲观锁"><a href="#3-2-乐观锁-amp-悲观锁" class="headerlink" title="3.2 乐观锁 &amp; 悲观锁"></a>3.2 乐观锁 &amp; 悲观锁</h3><blockquote>
+<p>不管是什么锁都需要增加，需加失败重试</p>
+</blockquote>
+<h4 id="3-2-1-乐观锁"><a href="#3-2-1-乐观锁" class="headerlink" title="3.2.1 乐观锁"></a>3.2.1 乐观锁</h4><ul>
+<li><p>通过版本号来进行更新的操作属于乐观锁</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> tab <span class="keyword">set</span> <span class="keyword">name</span> = <span class="string">'xxx'</span> <span class="keyword">where</span> <span class="keyword">id</span> = <span class="number">1</span> <span class="keyword">and</span> <span class="keyword">version</span> = xxx</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="3-2-2-悲观锁"><a href="#3-2-2-悲观锁" class="headerlink" title="3.2.2 悲观锁"></a>3.2.2 悲观锁</h4><blockquote>
+<p>共享锁 &amp; 排它锁都是悲观锁的具象实现</p>
+</blockquote>
+<ul>
+<li>显示地控制行或表锁属于悲观锁</li>
+</ul>
+<h2 id="4-原理"><a href="#4-原理" class="headerlink" title="4  原理"></a>4  原理</h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/String,StringBuilder,StringBuffer/" class="archive-article-date">
-  	<time datetime="2020-06-13T05:15:22.731Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/06/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          数据库隔离级别
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/06/13/String,StringBuilder,StringBuffer/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">String,StringBuilder,StringBuffer</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/String,StringBuilder,StringBuffer/">String,StringBuilder,StringBuffer</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/Linux/" class="archive-article-date">
-  	<time datetime="2020-06-13T05:15:22.729Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/Linux/">Linux</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/Git%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2020-06-13T05:15:22.727Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/Git%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8/">Git命令的使用</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -393,8 +409,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
