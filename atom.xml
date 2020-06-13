@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-20T10:17:46.734Z</updated>
+  <updated>2020-06-13T03:25:42.430Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决Google浏览器崩溃 错误代码：STATUS_INVALID_IMAGE_HASH</title>
+    <link href="http://yoursite.com/2020/06/13/%E8%A7%A3%E5%86%B3Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B4%A9%E6%BA%83%20%E9%94%99%E8%AF%AF%E4%BB%A3%E7%A0%81%EF%BC%9ASTATUS_INVALID_IMAGE_HASH/"/>
+    <id>http://yoursite.com/2020/06/13/%E8%A7%A3%E5%86%B3Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B4%A9%E6%BA%83%20%E9%94%99%E8%AF%AF%E4%BB%A3%E7%A0%81%EF%BC%9ASTATUS_INVALID_IMAGE_HASH/</id>
+    <published>2020-06-13T06:06:20.892Z</published>
+    <updated>2020-06-13T03:25:42.430Z</updated>
+    
+    <content type="html"><![CDATA[<h1>解决Google浏览器崩溃 错误代码：STATUS_INVALID_IMAGE_HASH<h3>问题描述<p>Google的chrome莫名其妙突然所有页面都显示“喔唷 崩溃啦”，各种插件在右下角弹出报错！</p><h3>解决方法<p>通过修改注册列表的方法，禁用Renderer Code Integrity Protection（渲染器代码完整性保护）可以解决，亲测可用。</p><h4>步骤<ol><li><p>Win+R输入regedit打开注册表编辑器</p></li><li><p>找到HKEY_LOCAL_MACHINE \ SOFTWARE \ Policies \ Google \ Chrome</p><p><strong>注意</strong>：不是HKEY_LOCAL_MACHINE \ SOFTWARE \Google</p><p>若没有此目录可以新建项,如下图红框所示</p></li><li><p>右键单击新建&gt;DWORD(32位)值以创建新密钥</p></li><li><p>将值名称改为RendererCodeIntegrityEnabled，并将值数据输入为0</p></li><li><p>重新启动chrome</p></li></ol><p><img src="C:%5CUsers%5CTim%5CDesktop%5C%E5%BE%85%E6%9B%B4%E6%96%B0%5C111.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;解决Google浏览器崩溃 错误代码：STATUS_INVALID_IMAGE_HASH
+
+
+
+&lt;h3&gt;问题描述
+
+&lt;p&gt;Google的chrome莫名其妙突然所有页面都显示“喔唷 崩溃啦”，各种插件在右下角弹出报错！&lt;/p&gt;
+&lt;h3&gt;解决方法
+
+&lt;p&gt;通过修改注册列表的
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>自定义错误信息</title>
